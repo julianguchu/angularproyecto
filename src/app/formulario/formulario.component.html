@@ -1,0 +1,52 @@
+<div class="container">
+
+
+
+<h1 class="text text-center">Formulario</h1>
+	
+
+<form>
+<div *ngIf="mensaje"class="alert alert-danger">{{mensaje}}</div>
+	<div class="form-group">
+<label>Id</label>
+<input class="form-control"  type="text"  name ="id" [(ngModel)]="empleadoSeleccionado.id"/>
+</div>
+
+
+	<div class="form-group">
+<label>Nombre</label>
+<input class="form-control" type="text" name ="nombre" [(ngModel)]="empleadoSeleccionado.nombre">
+</div>
+
+	<div class="form-group">
+<label>Funcion</label>
+<input  class="form-control" type="text" name ="funcion" [(ngModel)]="empleadoSeleccionado.funcion">
+</div>
+
+	<div class="form-group">
+		<label>Jefe</label>
+<select class="form-control" name ="jefe" [(ngModel)]="empleadoSeleccionado.jefe">
+<option [value]= "jf.id" *ngFor="let jf of jefes">{{jf.nombre}}</option>
+</select>
+</div>
+
+	
+<input  class=" btn btn-success form-control" type="submit"  (click)="registrar()">
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+

@@ -1,0 +1,19 @@
+<table  *ngIf="empleados!=null"class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">nombre empleado</th>
+      <th scope="col">funcion</th>
+      <th scope="col">jefe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let variable of empleados">
+      <th scope="row">{{variable.id}}</th>
+      <td> {{variable.nombre}} </td>
+      <td>{{variable.funcion}}</td>
+      <td>{{variable.jefe}}</td>
+    </tr>
+   
+  </tbody>
+</table> 
