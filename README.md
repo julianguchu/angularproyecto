@@ -1,6 +1,8 @@
 # Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
+Este proyecto contiene las vistas de listar empleados y agregar empleados, los cuales se vinculan al proyecto de servicios alojado en este repositorio https://github.com/julianguchu/ServicioJava.git , los cuales son consumidos para establecer la logica del aplicativo. El aplicativo posee algunas limitaciones en cuanto a la vista de tabla, ya que es necesario recargar la pagina para que se vean efectivos los registros de nuevos empleados.
+
+Para que esta aplicación corra de manera efectiva hay que primero hacer uso de los srvicios, desplegarlos en spring boot. De esa manera la logica back será aplicada.
 
 ## Development server
 
